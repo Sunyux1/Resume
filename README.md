@@ -1,6 +1,8 @@
 # Data Cleaning Project
 Use the public datasets and crime research provided by the NSW Government to clean, analyze, and visualize crime data and police station CSV files for the community.
+
 构建一个端到端数据管道，分析来源于 BOCSAR（新南威尔士州犯罪统计与研究局）及新南威尔士州客户服务部的犯罪事件数据，整合警察局位置与邮政编码信息，用来为新南威尔士州警察的资源调配提供地理空间洞察。
+
 Key Contributions
 •	Data Wrangling: Ingested and cleaned three heterogeneous datasets (CSV, JSON) using pandas — handling bad rows, asterisk artefacts, type coercion, and duplicate removal without modifying source files.
 •	ETL / Data Reshaping: Reshaped a wide-format crime dataset (300+ monthly columns) into a tidy long-format using pd.melt, producing a five-column DataFrame (suburb, category, sub_category, date, crime_count).
